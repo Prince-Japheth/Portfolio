@@ -171,7 +171,6 @@ article {
   border: 1px solid var(--jet);
   border-radius: 20px;
   padding: 15px;
-  box-shadow: var(--shadow-1);
   z-index: 1;
 }
 
@@ -316,7 +315,7 @@ main {
 
 .sidebar {
   margin-bottom: 15px;
-  max-height: 112px;
+  max-height: 120px;
   overflow: hidden;
   transition: var(--transition-2);
 }
@@ -653,6 +652,10 @@ main {
   opacity: 0.8;
   visibility: visible;
   pointer-events: all;
+}
+
+.cv {
+  border: 1px solid var(--jet);
 }
 
 .testimonials-modal {
