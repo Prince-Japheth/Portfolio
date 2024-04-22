@@ -157,3 +157,16 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+
+
+// Download CV
+function downloadCV() {
+  var link = document.createElement('a');
+  link.setAttribute('href', './Japheth-Jerry-Cv.pdf');
+  link.setAttribute('download', 'Japheth-Jerry-Cv.pdf');
+  link.style.display = 'none';
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+}
