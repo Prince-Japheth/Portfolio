@@ -965,12 +965,19 @@
 
 <script>
 function sendToWhatsApp() {
-  var fullname = encodeURIComponent(document.querySelector('input[name="fullname"]').value);
-  var email = encodeURIComponent(document.querySelector('input[name="email"]').value);
-  var message = encodeURIComponent(document.querySelector('textarea[name="message"]').value);
+  var fullname = document.querySelector('input[name="fullname"]').value;
+  var email = document.querySelector('input[name="email"]').value;
+  var message = document.querySelector('textarea[name="message"]').value;
   
   var whatsappNumber = "2348034766310";
-  var whatsappUrl = `https://wa.me/${whatsappNumber}?text=Name: ${fullname}%0A%0AEmail: ${email}%0A%0AMessage: ${message}`;
+  var whatsappText = `Name: ${fullname}
+
+Email: ${email}
+
+Message: ${message}`;
+
+  var encodedText = encodeURIComponent(whatsappText);
+  var whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedText}`;
   
   window.open(whatsappUrl, '_blank');
   
