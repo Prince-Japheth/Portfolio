@@ -947,32 +947,36 @@
           </figure>
         </section>
 
-        <section class="contact-form">
+          <section class="contact-form">
+    <h3 class="h3 form-title">Contact Form</h3>
+    <form id="contactForm" class="form" data-form onsubmit="return sendToWhatsApp()">
+      <div class="input-wrapper">
+        <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+        <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+      </div>
+      <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+      <button class="form-btn" type="submit" data-form-btn>
+        <ion-icon name="paper-plane"></ion-icon>
+        <span>Send Message</span>
+      </button>
+    </form>
+  </section>
+</article>
 
-          <h3 class="h3 form-title">Contact Form</h3>
-
-          <form id="contactForm"
-            action="https://script.google.com/macros/s/AKfycbypHd49_efjXzkxJUQUJv-6koK892cWlbRuj5NBieeyJt6tNlS00OBv-6fjKwkknIWTEA/exec"
-            class="form" data-form>
-
-            <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
-            </div>
-
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-
-            <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
-
-          </form>
-
-        </section>
-
-      </article>
+<script>
+function sendToWhatsApp() {
+  var fullname = encodeURIComponent(document.querySelector('input[name="fullname"]').value);
+  var email = encodeURIComponent(document.querySelector('input[name="email"]').value);
+  var message = encodeURIComponent(document.querySelector('textarea[name="message"]').value);
+  
+  var whatsappNumber = "YOUR_WHATSAPP_NUMBER"; // Replace with your WhatsApp number including country code
+  var whatsappUrl = `https://wa.me/${whatsappNumber}?text=Name: ${fullname}%0AEmail: ${email}%0AMessage: ${message}`;
+  
+  window.open(whatsappUrl, '_blank');
+  
+  return false; // Prevent form from submitting normally
+}
+</script>
 
 
     </div>
