@@ -969,7 +969,7 @@ function sendToWhatsApp() {
   var email = encodeURIComponent(document.querySelector('input[name="email"]').value);
   var message = encodeURIComponent(document.querySelector('textarea[name="message"]').value);
   
-  var whatsappNumber = "+234 803 476 6310"; // Replace with your WhatsApp number including country code
+  var whatsappNumber = "2348034766310"; // Replace with your WhatsApp number including country code
   var whatsappUrl = `https://wa.me/${whatsappNumber}?text=Name: ${fullname}%0AEmail: ${email}%0AMessage: ${message}`;
   
   window.open(whatsappUrl, '_blank');
