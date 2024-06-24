@@ -969,12 +969,12 @@ function sendToWhatsApp() {
   var email = encodeURIComponent(document.querySelector('input[name="email"]').value);
   var message = encodeURIComponent(document.querySelector('textarea[name="message"]').value);
   
-  var whatsappNumber = "2348034766310"; // Replace with your WhatsApp number including country code
-  var whatsappUrl = `https://wa.me/${whatsappNumber}?text=Name: ${fullname}%0AEmail: ${email}%0AMessage: ${message}`;
+  var whatsappNumber = "2348034766310";
+  var whatsappUrl = `https://wa.me/${whatsappNumber}?text=Name: ${fullname}%0A%0AEmail: ${email}%0A%0AMessage: ${message}`;
   
   window.open(whatsappUrl, '_blank');
   
-  return false; // Prevent form from submitting normally
+  return false;
 }
 </script>
 
