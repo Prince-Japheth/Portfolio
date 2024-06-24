@@ -970,7 +970,11 @@ function sendToWhatsApp() {
   var message = document.querySelector('textarea[name="message"]').value;
   
   var whatsappNumber = "2348034766310";
-  var whatsappText = `Name: ${fullname}<br><br>Email: ${email}<br><br>Message: ${message}`;
+  var whatsappText = `Name: ${fullname}
+
+Email: ${email}
+
+Message: ${message}`;
 
   var encodedText = encodeURIComponent(whatsappText);
   var whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedText}`;
