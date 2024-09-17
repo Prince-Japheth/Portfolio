@@ -140,6 +140,7 @@ for (let i = 0; i < formInputs.length; i++) {
 const navigationLinks = document.querySelectorAll("[data-nav-link]");
 const pages = document.querySelectorAll("[data-page]");
 
+<<<<<<< HEAD
 // add event to all nav link
 for (let i = 0; i < navigationLinks.length; i++) {
   navigationLinks[i].addEventListener("click", function () {
@@ -155,11 +156,50 @@ for (let i = 0; i < navigationLinks.length; i++) {
       }
     }
 
+=======
+// Function to activate the page based on the stored value or default
+function activatePage(pageName) {
+  for (let i = 0; i < pages.length; i++) {
+    if (pageName === pages[i].dataset.page) {
+      pages[i].classList.add("active");
+      navigationLinks[i].classList.add("active");
+      window.scrollTo(0, 0);
+    } else {
+      pages[i].classList.remove("active");
+      navigationLinks[i].classList.remove("active");
+    }
+  }
+}
+
+// Check if there's a stored active page in localStorage
+const savedPage = localStorage.getItem("activePage");
+if (savedPage) {
+  activatePage(savedPage);
+} else {
+  // Default to the first page if no saved page
+  activatePage(pages[0].dataset.page);
+}
+
+// Add event to all nav links
+for (let i = 0; i < navigationLinks.length; i++) {
+  navigationLinks[i].addEventListener("click", function () {
+    const pageName = this.innerHTML.toLowerCase();
+
+    // Save the active page to localStorage
+    localStorage.setItem("activePage", pageName);
+
+    // Activate the clicked page
+    activatePage(pageName);
+>>>>>>> master
   });
 }
 
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> master
 // Download CV
 function downloadCV() {
   var link = document.createElement('a');
