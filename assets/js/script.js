@@ -140,23 +140,6 @@ for (let i = 0; i < formInputs.length; i++) {
 const navigationLinks = document.querySelectorAll("[data-nav-link]");
 const pages = document.querySelectorAll("[data-page]");
 
-<<<<<<< HEAD
-// add event to all nav link
-for (let i = 0; i < navigationLinks.length; i++) {
-  navigationLinks[i].addEventListener("click", function () {
-
-    for (let i = 0; i < pages.length; i++) {
-      if (this.innerHTML.toLowerCase() === pages[i].dataset.page) {
-        pages[i].classList.add("active");
-        navigationLinks[i].classList.add("active");
-        window.scrollTo(0, 0);
-      } else {
-        pages[i].classList.remove("active");
-        navigationLinks[i].classList.remove("active");
-      }
-    }
-
-=======
 // Function to activate the page based on the stored value or default
 function activatePage(pageName) {
   for (let i = 0; i < pages.length; i++) {
@@ -190,16 +173,12 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
     // Activate the clicked page
     activatePage(pageName);
->>>>>>> master
   });
 }
 
 
 
-<<<<<<< HEAD
-=======
 
->>>>>>> master
 // Download CV
 function downloadCV() {
   var link = document.createElement('a');
