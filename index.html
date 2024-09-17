@@ -1,0 +1,1096 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Japheth Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <main>
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Japheth" width="80">
+        </figure>
+
+        <div class="info-content">
+          <center>
+            <h1 class="name" title="Japheth">Japheth</h1>
+
+            <p class="title">Emerging Cybersecurity Professional</p>
+
+            <p style="margin-top: 8px;" class="title">Computer Software Engineer</p>
+
+            <br>
+
+          </center>
+        </div>
+
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:princejaphethjj@gmail.com" class="contact-link">princejaphethjj@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+2348034766310" class="contact-link">+2348034766310</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="1982-06-23">August 22</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Abuja Nigeria</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://twitter.com/Yafet_Tim" target="blank" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="www.linkedin.com/in/japheth-jerry-34a513274" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/Prince-Japheth" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+    <div class="main-content">
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me...</h2>
+        </header>
+
+        <section class="about-text">
+<p>
+  I'm Japheth – a Computer Software Engineer and emerging Cybersecurity Professional.
+</p>
+
+<p>
+  I specialize in creating cutting-edge applications that bring innovative solutions to life. My expertise spans Full-Stack Web Development, where I craft captivating online experiences, UI/UX Design, focusing on user-centric interfaces, and Graphic Design, infusing creativity and aesthetics into every project.
+</p>
+
+
+          <button style="margin-right: 100%;" class="form-btn" onclick="downloadCV()">
+            <ion-icon name="cloud-download-outline"></ion-icon>
+            <span>Download CV</span>
+          </button>
+          <br>
+        </section>
+
+
+        <!--
+  - service
+-->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What I Do</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+        " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+<h4 class="h4 service-item-title">Front-End Web Development</h4>
+
+<p class="service-item-text">
+  Creating visually appealing, interactive, and user-friendly interfaces for your web applications.
+</p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+<h4 class="h4 service-item-title">Back-End Web Development</h4>
+
+<p class="service-item-text">
+  Developing robust and scalable server-side solutions to power your web applications.
+</p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+<h4 class="h4 service-item-title">UI/UX Design</h4>
+
+<p class="service-item-text">
+  Expertly crafted UI/UX designs for seamless and intuitive user experiences across mobile and desktop applications.
+</p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+<h4 class="h4 service-item-title">Graphic Design</h4>
+
+<p class="service-item-text">
+  Creating visually stunning logos, flyers, and graphics to enhance your brand identity and make a lasting impression.
+</p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+  - testimonials
+-->
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Testimonials</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Adamu Manu" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Adamu Manu</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Working with Japheth was an absolute pleasure. His attention to detail and his level of creativity
+                    is quite impressive.
+                  </p>
+
+                  <br>
+
+                  <time><b>Full Stack Developer</b></time>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-2.png" alt="Omoleye Marvelous" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Omoleye Marvelous</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Japheth's expertise in web design, development, UI/UX design, and graphic design has significantly
+                    contributed to the success of our team's endeavors.
+                  </p>
+
+                  <br>
+
+                  <time><b>Web Developer, UI/UX Design</b></time>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-3.png" alt="Edikan Emmanuel" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Edikan Emmanuel</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+
+                    Japheth’s collaborative spirit truly made our project shine. Working alongside him was a seamless
+                    experience, where his expertise and team-oriented approach brought our collective vision to life.
+                  </p>
+
+                  <br>
+
+                  <time><b>Web Developer</b></time>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-4.png" alt="Ayomide Faithful Olaoye" width="60"
+                    data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Ayomide Faithful Olaoye</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Japheth's expertise in web design, development, and graphic design is unmatched. He consistently
+                    delivers top-notch work with precision and creativity.
+                  </p>
+
+                  <br>
+
+                  <time><b>Graphic Designer, Front-end Web Developer</b></time>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+  - testimonials modal
+-->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title></h4>
+
+              <time datetime="2021-06-14">20 July, 2023</time>
+
+              <div data-modal-text>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+      </article>
+
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Lincoln College of Science, Mangement & Technology</h4>
+              <p class="timeline-text">Computer Software Engineering & Cybersecurity</p>
+              <span>2023 — Present</span>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Website Developer</h4>
+              <p class="timeline-text">Safekan</p>
+
+              <span>2023 — 2024</span>
+
+              <p class="timeline-text">
+                Designed website layouts and user interfaces according to
+                client specifications.
+                <br>
+                Conducted usability tests on new features Of the website to
+                ensure quality assurance standards are met
+                <br>
+                Developed and maintained the Brand Official Website using
+                HTML CSS, Bootstrap and JavaScript.
+                <br>
+                Analyzed user feedback to identify areas of improvement
+                within existing designs or new feature requests.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">UI/UX Designer</h4>
+              <p class="timeline-text">XTM-Launch</p>
+
+              <span>2023 — Present</span>
+
+              <p class="timeline-text">
+                Designed intuitive and visually appealing user interfaces for various digital platforms, such as
+                websites, web applications, and mobile apps.
+                <br>
+                Ensuring a seamless and enjoyable user experience by crafting user flows, wireframes, and prototypes
+                that prioritize usability and accessibility.
+                <br>
+                Implementing an iterative design process, incorporating feedback from users, and usability tests to
+                refine and improve designs continuously.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Graphic Designer</h4>
+              <p class="timeline-text">XTM-Launch</p>
+
+              <span>2023 — Present</span>
+
+              <p class="timeline-text">
+                Researched new trends in graphic design software
+                technologies and techniques.
+                Designed logos, icons. infographics, and other visual elements
+                for online presence.
+                Editing and retouching photos to enhance their quality and
+                relevance for various design projects.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Webflow</h5>
+                <data value="100">100%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 100%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">HTML</h5>
+                <data value="100">100%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 100%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">CSS & SCSS</h5>
+                <data value="100">100%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 100%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Bootstrap</h5>
+                <data value="100">100%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 100%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">JavaScript</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">NodeJs</h5>
+                <data value="100">100%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 100%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">ReactJs</h5>
+                <data value="95">95%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 95%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">React Native</h5>
+                <data value="95">95%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 95%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Mern</h5>
+                <data value="95">95%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 95%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">PHP</h5>
+                <data value="85">85%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 85%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Relational Database Manaement (SQL & No SQL)</h5>
+                <data value="95">95%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 95%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">C</h5>
+                <data value="100">100%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 100%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">C++</h5>
+                <data value="100">100%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 100%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">C#</h5>
+                <data value="100">100%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 100%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">CorelDRAW Graphic Suites</h5>
+                <data value="100">100%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 100%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Adobe Graphic Suites</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Microsoft Office Suite</h5>
+                <data value="100">100%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 100%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Figma</h5>
+                <data value="100">100%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 100%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Canva</h5>
+                <data value="100">100%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 100%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+      <article class="portfolio" data-page="portfolio">
+
+    <header>
+        <h2 class="h2 article-title">Portfolio</h2>
+    </header>
+
+    <section class="projects">
+
+        <ul class="filter-list">
+
+            <li class="filter-item">
+                <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+                <button data-filter-btn>Front-end web development</button>
+            </li>
+
+            <li class="filter-item">
+                <button data-filter-btn>UI/UX Design</button>
+            </li>
+
+        </ul>
+
+        <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+                <div class="select-value" data-selecct-value>Select category</div>
+
+                <div class="select-icon">
+                    <ion-icon name="chevron-down"></ion-icon>
+                </div>
+
+            </button>
+
+            <ul class="select-list">
+
+                <li class="select-item">
+                    <button data-select-item>All</button>
+                </li>
+
+                <li class="select-item">
+                    <button data-select-item>front-end web development</button>
+                </li>
+
+                <li class="select-item">
+                    <button data-select-item>UI/UX design</button>
+                </li>
+
+            </ul>
+
+        </div>
+
+        <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="front-end web development">
+                <a href="#">
+
+                    <figure class="project-img">
+                        <div class="project-item-icon-box">
+                            <ion-icon name="eye-outline"></ion-icon>
+                        </div>
+
+                        <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
+                    </figure>
+
+                    <h3 class="project-title">Finance</h3>
+
+                    <p class="project-category">front-end web development</p>
+
+                </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="front-end web development">
+                <a href="#">
+
+                    <figure class="project-img">
+                        <div class="project-item-icon-box">
+                            <ion-icon name="eye-outline"></ion-icon>
+                        </div>
+
+                        <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
+                    </figure>
+
+                    <h3 class="project-title">Orizon</h3>
+
+                    <p class="project-category">front-end web development</p>
+
+                </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="ui/ux design">
+                <a href="#">
+
+                    <figure class="project-img">
+                        <div class="project-item-icon-box">
+                            <ion-icon name="eye-outline"></ion-icon>
+                        </div>
+
+                        <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
+                    </figure>
+
+                    <h3 class="project-title">Fundo</h3>
+
+                    <p class="project-category">UI/UX Design</p>
+
+                </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="ui/ux design">
+                <a href="#">
+
+                    <figure class="project-img">
+                        <div class="project-item-icon-box">
+                            <ion-icon name="eye-outline"></ion-icon>
+                        </div>
+
+                        <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
+                    </figure>
+
+                    <h3 class="project-title">Brawlhalla</h3>
+
+                    <p class="project-category">UI/UX Design</p>
+
+                </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="ui/ux design">
+                <a href="#">
+
+                    <figure class="project-img">
+                        <div class="project-item-icon-box">
+                            <ion-icon name="eye-outline"></ion-icon>
+                        </div>
+
+                        <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
+                    </figure>
+
+                    <h3 class="project-title">DSM.</h3>
+
+                    <p class="project-category">UI/UX Design</p>
+
+                </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="ui/ux design">
+                <a href="#">
+
+                    <figure class="project-img">
+                        <div class="project-item-icon-box">
+                            <ion-icon name="eye-outline"></ion-icon>
+                        </div>
+
+                        <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
+                    </figure>
+
+                    <h3 class="project-title">MetaSpark</h3>
+
+                    <p class="project-category">UI/UX Design</p>
+
+                </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="front-end web development">
+                <a href="#">
+
+                    <figure class="project-img">
+                        <div class="project-item-icon-box">
+                            <ion-icon name="eye-outline"></ion-icon>
+                        </div>
+
+                        <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
+                    </figure>
+
+                    <h3 class="project-title">Summary</h3>
+
+                    <p class="project-category">front-end web development</p>
+
+                </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="ui/ux design">
+                <a href="#">
+
+                    <figure class="project-img">
+                        <div class="project-item-icon-box">
+                            <ion-icon name="eye-outline"></ion-icon>
+                        </div>
+
+                        <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
+                    </figure>
+
+                    <h3 class="project-title">Task Manager</h3>
+
+                    <p class="project-category">UI/UX Design</p>
+
+                </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="front-end web development">
+                <a href="#">
+
+                    <figure class="project-img">
+                        <div class="project-item-icon-box">
+                            <ion-icon name="eye-outline"></ion-icon>
+                        </div>
+
+                        <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
+                    </figure>
+
+                    <h3 class="project-title">Arrival</h3>
+
+                    <p class="project-category">Front-End Web Development</p>
+
+                </a>
+            </li>
+
+        </ul>
+
+    </section>
+
+</article>
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126093.83849534589!2d7.449868049999999!3d9.024256000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e745f4cd62fd9%3A0x53bd17b4a20ea12b!2sAbuja%2C%20Federal%20Capital%20Territory!5e0!3m2!1sen!2sng!4v1713519230507!5m2!1sen!2sng"
+              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </figure>
+        </section>
+
+          <section class="contact-form">
+    <h3 class="h3 form-title">Contact Form</h3>
+    <form id="contactForm" class="form" data-form onsubmit="return sendToWhatsApp()">
+      <div class="input-wrapper">
+        <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+        <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+      </div>
+      <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+      <button class="form-btn" type="submit" data-form-btn>
+        <ion-icon name="paper-plane"></ion-icon>
+        <span>Send Message</span>
+      </button>
+    </form>
+  </section>
+</article>
+
+<script>
+function sendToWhatsApp() {
+  var fullname = document.querySelector('input[name="fullname"]').value;
+  var email = document.querySelector('input[name="email"]').value;
+  var message = document.querySelector('textarea[name="message"]').value;
+  
+  var whatsappNumber = "2348034766310";
+  var whatsappText = `Name: ${fullname}
+
+Email: ${email}
+
+Message: ${message}`;
+
+  var encodedText = encodeURIComponent(whatsappText);
+  var whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedText}`;
+  
+  window.open(whatsappUrl, '_blank');
+  
+  return false;
+}
+</script>
+
+
+    </div>
+
+  </main>
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
