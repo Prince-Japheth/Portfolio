@@ -173,6 +173,14 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
     // Activate the clicked page
     activatePage(pageName);
+
+    // Check if the clicked link is the "Contact" link
+    if (pageName === "contact") {
+      // Add the "active" class to the sidebar
+      sidebar.classList.add("active");
+    } else {
+      sidebar.classList.remove("active");
+    }
   });
 }
 
