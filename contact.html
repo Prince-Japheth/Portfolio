@@ -201,7 +201,7 @@
 
                 <section class="contact-form">
                     <h3 class="h3 form-title">Contact Form</h3>
-                    <form id="contactForm" class="form" data-form onsubmit="return sendToWhatsApp()">
+                    <form id="contactForm" class="form" action="https://formspree.io/f/mqakppnn" method="POST">
                         <div class="input-wrapper">
                             <input type="text" name="fullname" class="form-input" placeholder="Full name" required
                                 data-form-input>
@@ -218,7 +218,7 @@
                 </section>
             </article>
 
-            <script>
+            <!-- <script>
                 function sendToWhatsApp() {
                     var fullname = document.querySelector('input[name="fullname"]').value;
                     var email = document.querySelector('input[name="email"]').value;
@@ -238,7 +238,7 @@ Message: ${message}`;
 
                     return false;
                 }
-            </script>
+            </script> -->
 
 
         </div>
