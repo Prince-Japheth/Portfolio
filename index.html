@@ -128,19 +128,19 @@
         <ul class="social-list">
 
           <li class="social-item">
-            <a href="https://twitter.com/Yafet_Tim" target="blank" class="social-link">
+            <a href="https://twitter.com/Yafet_Tim" target="blank" class="social-link" target="_blank">
               <ion-icon name="logo-twitter"></ion-icon>
             </a>
           </li>
 
           <li class="social-item">
-            <a href="www.linkedin.com/in/japheth-jerry-34a513274" class="social-link">
+            <a href="www.linkedin.com/in/japheth-jerry-34a513274" class="social-link" target="_blank">
               <ion-icon name="logo-linkedin"></ion-icon>
             </a>
           </li>
 
           <li class="social-item">
-            <a href="https://github.com/Prince-Japheth" class="social-link">
+            <a href="https://github.com/Prince-Japheth" class="social-link" target="_blank">
               <ion-icon name="logo-github"></ion-icon>
             </a>
           </li>
@@ -923,7 +923,8 @@
 
                 <h3 class="projects-title">Japheth Portfolio Website</h3>
 
-                <p class="projects-category">Web development <br> <span style="font-size: 12px !important;"> ReactJs, Css &
+                <p class="projects-category">Web development <br> <span style="font-size: 12px !important;"> ReactJs,
+                    Css &
                     Bootstrap</span></p>
               </a>
             </li>
@@ -941,7 +942,8 @@
 
                 <h3 class="projects-title">Lincoln Impact Foundation</h3>
 
-                <p class="projects-category">Web development <br> <span style="font-size: 12px !important;"> Laravel, Css &
+                <p class="projects-category">Web development <br> <span style="font-size: 12px !important;"> Laravel,
+                    Css &
                     JavaScript</span></p>
               </a>
             </li>
@@ -1264,10 +1266,11 @@
 
         <section class="contact-form">
           <h3 class="h3 form-title">Contact Form</h3>
-          <form id="contactForm" class="form" data-form onsubmit="return sendToWhatsApp()">
+          <form id="contactForm" class="form" action="https://formspree.io/f/mqakppnn" method="POST">
             <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+              <input type="text" name="name" class="form-input" placeholder="Full name" required data-form-input>
+              <input type="email" name="_replyto" class="form-input" placeholder="Email address" required
+                data-form-input>
             </div>
             <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
             <button class="form-btn" type="submit" data-form-btn>
@@ -1278,7 +1281,7 @@
         </section>
       </article>
 
-      <script>
+      <!-- <script>
         function sendToWhatsApp() {
           var fullname = document.querySelector('input[name="fullname"]').value;
           var email = document.querySelector('input[name="email"]').value;
@@ -1298,7 +1301,7 @@ Message: ${message}`;
 
           return false;
         }
-      </script>
+      </script> -->
 
 
     </div>
