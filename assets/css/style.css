@@ -2036,12 +2036,15 @@ textarea.form-input::-webkit-resizer {
 
 
 /**
- * responsive lower than 768px screen
+ * responsive Smaller than 768px screen
  */
 
 @media (max-width: 768px) {
   .skills2-content-box {
     justify-content: space-between;
+  }
+  .navbar {
+    background-color: transparent;
   }
 }
 
