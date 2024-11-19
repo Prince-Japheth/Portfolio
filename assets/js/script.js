@@ -202,28 +202,36 @@ function downloadCV() {
 document.addEventListener('DOMContentLoaded', () => {
   const timelineTitles = document.querySelectorAll('.timeline-item-title');
   const timelineDescriptions = document.querySelectorAll('.timeline-description');
-  
-  timelineTitles.forEach((title, index) => {
-      title.addEventListener('click', () => {
-          // Close all descriptions
-          timelineDescriptions.forEach(desc => {
-              desc.classList.remove('show');
-              title.parentElement.querySelector('.timeline-item-title').classList.remove('active');
-          });
 
-          // Open clicked description
-          const description = title.parentElement.querySelector('.timeline-description');
-          description.classList.add('show');
-          title.classList.add('active');
-      });
+  timelineTitles.forEach((title) => {
+    title.addEventListener('click', () => {
+      const parentItem = title.closest('.timeline-item');
+      const description = parentItem.querySelector('.timeline-description');
+      
+      // Check if the clicked item is already active
+      const isCurrentlyActive = title.classList.contains('active');
+      
+      // Remove active state from all items
+      timelineTitles.forEach(t => t.classList.remove('active'));
+      timelineDescriptions.forEach(desc => desc.classList.remove('show'));
+      
+      // If the clicked item wasn't already active, activate it
+      if (!isCurrentlyActive) {
+        title.classList.add('active');
+        description.classList.add('show');
+      }
+    });
   });
 });
 
-        const avatarBox = document.querySelector('.avatar-box');
 
-        function flipAvatar() {
-            avatarBox.classList.toggle('flipped');
-        }
 
-        // Initial auto-flip setup
-        setInterval(flipAvatar, 3000);
+
+const avatarBox = document.querySelector('.avatar-box');
+
+function flipAvatar() {
+  avatarBox.classList.toggle('flipped');
+}
+
+// Initial auto-flip setup
+setInterval(flipAvatar, 2000);
