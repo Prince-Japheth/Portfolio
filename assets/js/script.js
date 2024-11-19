@@ -218,3 +218,12 @@ document.addEventListener('DOMContentLoaded', () => {
       });
   });
 });
+
+        const avatarBox = document.querySelector('.avatar-box');
+
+        function flipAvatar() {
+            avatarBox.classList.toggle('flipped');
+        }
+
+        // Initial auto-flip setup
+        setInterval(flipAvatar, 3000);

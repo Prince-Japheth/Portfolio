@@ -24,7 +24,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 </head>
 
 <body>
@@ -35,9 +36,18 @@
 
       <div class="sidebar-info">
 
-        <figure class="avatar-box">
-          <img src="./assets/images/my-avatar.png" alt="Japheth" width="80">
-        </figure>
+        <div class="avatar-container">
+          <div class="avatar-box">
+            <figure class="avatar-front">
+              <img src="./assets/images/my-avatar.png" alt="Japheth" width="80">
+            </figure>
+            <figure class="avatar-back">
+              <a href="./assets/images/me.jpg">
+              <img src="./assets/images/me.jpg" alt="Alternative" width="80">
+            </a>
+            </figure>
+          </div>
+        </div>
 
         <div class="info-content">
           <center>
@@ -841,7 +851,8 @@
 
                 <h3 class="projects-title">Lincoln Impact Foundation</h3>
 
-                <p class="projects-category">Web development <br> <span style="font-size: 12px !important;"> Laravel, MySql,
+                <p class="projects-category">Web development <br> <span style="font-size: 12px !important;"> Laravel,
+                    MySql,
                     Css, Bootstrap &
                     JavaScript</span></p>
               </a>
@@ -889,8 +900,7 @@
             </li>
 
             <li class="projects-item  active" data-filter-item data-category="graphic design">
-              <a href="./assets/images/project-19.jpg"
-                target="_blank">
+              <a href="./assets/images/project-19.jpg" target="_blank">
 
                 <figure class="projects-img">
                   <div class="projects-item-icon-box">
@@ -1184,8 +1194,7 @@
             </li>
 
             <li class="projects-item  active" data-filter-item data-category="graphic design">
-              <a href="./assets/images/project-20.jpg"
-                target="_blank">
+              <a href="./assets/images/project-20.jpg" target="_blank">
 
                 <figure class="projects-img">
                   <div class="projects-item-icon-box">
