@@ -851,7 +851,7 @@ main {
  * education and experience 
  */
 
- .timeline-description {
+.timeline-description {
   color: var(--light-gray);
   font-weight: var(--fw-300);
   line-height: 1.6;
@@ -971,8 +971,9 @@ main {
   line-height: 1.6;
   text-align: justify;
 }
-.timeline-text.edu{
-text-align: start !important;
+
+.timeline-text.edu {
+  text-align: start !important;
 }
 
 
@@ -2043,6 +2044,7 @@ textarea.form-input::-webkit-resizer {
   .skills2-content-box {
     justify-content: space-between;
   }
+
   .navbar {
     background-color: transparent;
   }
