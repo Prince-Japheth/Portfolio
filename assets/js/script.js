@@ -1,6 +1,6 @@
 'use strict';
 
-
+AOS.init();
 
 // element toggle function
 const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
@@ -197,3 +197,24 @@ function downloadCV() {
   link.click();
   document.body.removeChild(link);
 }
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const timelineTitles = document.querySelectorAll('.timeline-item-title');
+  const timelineDescriptions = document.querySelectorAll('.timeline-description');
+  
+  timelineTitles.forEach((title, index) => {
+      title.addEventListener('click', () => {
+          // Close all descriptions
+          timelineDescriptions.forEach(desc => {
+              desc.classList.remove('show');
+              title.parentElement.querySelector('.timeline-item-title').classList.remove('active');
+          });
+
+          // Open clicked description
+          const description = title.parentElement.querySelector('.timeline-description');
+          description.classList.add('show');
+          title.classList.add('active');
+      });
+  });
+});

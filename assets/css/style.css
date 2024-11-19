@@ -851,6 +851,65 @@ main {
  * education and experience 
  */
 
+ .timeline-description {
+  color: var(--light-gray);
+  font-weight: var(--fw-300);
+  line-height: 1.6;
+  text-align: justify;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.timeline-description.show {
+  max-height: 500px;
+}
+
+.timeline-company {
+  color: var(--light-gray);
+  font-weight: var(--fw-400);
+  line-height: 1.6;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.job-type {
+  margin-left: 10px;
+  font-size: 0.8em;
+  padding: 2px 5px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  background-color: var(--vegas-gold);
+  color: black !important;
+  padding: 0 10px !important;
+  border-radius: 10px;
+}
+
+.timeline-item-title {
+  font-size: var(--fs-6);
+  line-height: 1.3;
+  margin-bottom: 7px;
+}
+
+.timeline-item-title::after {
+  content: '▼';
+  margin-left: 10px;
+  font-size: 0.7em;
+  transition: transform 0.3s ease;
+}
+
+.timeline-item-title.edu::after {
+  content: '';
+  margin-left: 10px;
+  font-size: 0.7em;
+  transition: transform 0.3s ease;
+}
+
+.timeline-item-title.active::after {
+  transform: rotate(180deg);
+}
+
 .timeline {
   margin-bottom: 30px;
 }
@@ -875,11 +934,7 @@ main {
   margin-bottom: 20px;
 }
 
-.timeline-item-title {
-  font-size: var(--fs-6);
-  line-height: 1.3;
-  margin-bottom: 7px;
-}
+
 
 .timeline-list span {
   color: var(--vegas-gold);
@@ -909,11 +964,15 @@ main {
   box-shadow: 0 0 0 4px var(--jet);
 }
 
+
 .timeline-text {
   color: var(--light-gray);
   font-weight: var(--fw-300);
   line-height: 1.6;
   text-align: justify;
+}
+.timeline-text.edu{
+text-align: start !important;
 }
 
 
@@ -2251,14 +2310,5 @@ textarea.form-input::-webkit-resizer {
     justify-content: center;
   }
 
-
-
-  /**
-	 * RESUME
-	 */
-
-  .timeline-text {
-    max-width: 700px;
-  }
 
 }

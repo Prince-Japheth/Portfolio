@@ -24,6 +24,99 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
   <style>
+    .timeline-list {
+      margin-left: 65px;
+    }
+
+    .timeline-item {
+      position: relative;
+    }
+
+    .timeline-item:not(:last-child) {
+      margin-bottom: 20px;
+    }
+
+    .timeline-item-title {
+      font-size: var(--fs-6);
+      line-height: 1.3;
+      margin-bottom: 7px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+    }
+
+    .timeline-item-title::after {
+      content: '▼';
+      margin-left: 10px;
+      font-size: 0.7em;
+      transition: transform 0.3s ease;
+    }
+
+    .timeline-item-title.active::after {
+      transform: rotate(180deg);
+    }
+
+    .timeline-company {
+      color: var(--light-gray);
+      font-weight: var(--fw-400);
+      line-height: 1.6;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+    }
+
+    .job-type {
+      margin-left: 10px;
+      font-size: 0.8em;
+      padding: 2px 5px;
+      border-radius: 3px;
+      text-transform: uppercase;
+      background-color: var(--vegas-gold);
+      color: black !important;
+      padding: 0 10px !important;
+      border-radius: 10px;
+    }
+
+    .timeline-description {
+      color: var(--light-gray);
+      font-weight: var(--fw-300);
+      line-height: 1.6;
+      text-align: justify;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+    }
+
+    .timeline-description.show {
+      max-height: 500px;
+    }
+
+    .timeline-list {
+      font-size: var(--fs-6);
+      margin-left: 45px;
+    }
+
+    .timeline-item:not(:last-child)::before {
+      content: "";
+      position: absolute;
+      top: -25px;
+      left: -30px;
+      width: 1px;
+      height: calc(100% + 50px);
+      background: var(--jet);
+    }
+
+    .timeline-item::after {
+      content: "";
+      position: absolute;
+      top: 5px;
+      left: -33px;
+      height: 6px;
+      width: 6px;
+      background: var(--text-gradient-yellow);
+      border-radius: 50%;
+      box-shadow: 0 0 0 4px var(--jet);
+    }
   </style>
 </head>
 
@@ -180,7 +273,7 @@
 
       </nav>
 
-      <article class="about  active" data-page="about">
+      <article class="about" data-page="about">
 
         <header>
           <h2 class="h2 article-title">About me...</h2>
@@ -463,13 +556,103 @@
       </article>
 
 
-      <article class="resume" data-page="resume">
+      <article class="resume active" data-page="resume">
 
-        <section class="skill">
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
 
-          <h3 class="h3 skills-title">My Expertise & Tools</h3>
+        <section class="timeline">
 
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
 
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Lincoln College of Science, Mangement & Technology</h4>
+              <p class="timeline-text">Computer Software Engineering & Cybersecurity</p>
+              <span>2023 — Present</span>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Website Developer</h4>
+              <div class="timeline-company">
+                Safekan
+                <span class="job-type">Part-time</span>
+              </div>
+              <span>2023 — Present</span>
+              <p class="timeline-description show">
+                Designed website layouts and user interfaces according to
+                client specifications.
+                <br>
+                Conducted usability tests on new features Of the website to
+                ensure quality assurance standards are met
+                <br>
+                Developed and maintained the Brand Official Website using
+                HTML CSS, Bootstrap and JavaScript.
+                <br>
+                Analyzed user feedback to identify areas of improvement
+                within existing designs or new feature requests.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">UI/UX Designer</h4>
+              <div class="timeline-company">
+                XTM-Launch
+                <span class="job-type">Part-time</span>
+              </div>
+              <span>2023 — 2024</span>
+              <p class="timeline-description">
+                Designed intuitive and visually appealing user interfaces for various digital platforms, such as
+                websites, web applications, and mobile apps.
+                <br>
+                Ensuring a seamless and enjoyable user experience by crafting user flows, wireframes, and prototypes
+                that prioritize usability and accessibility.
+                <br>
+                Implementing an iterative design process, incorporating feedback from users, and usability tests to
+                refine and improve designs continuously.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Graphic Designer</h4>
+              <div class="timeline-company">
+                XTM-Launch
+                <span class="job-type">Part-time</span>
+              </div>
+              <span>2023 — 2024</span>
+              <p class="timeline-description">
+                Researched new trends in graphic design software
+                technologies and techniques.
+                Designed logos, icons. infographics, and other visual elements
+                for online presence.
+                Editing and retouching photos to enhance their quality and
+                relevance for various design projectss.
+              </p>
+            </li>
+          </ol>
         </section>
 
       </article>
