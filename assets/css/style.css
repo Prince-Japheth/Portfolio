@@ -913,6 +913,7 @@ main {
   color: var(--light-gray);
   font-weight: var(--fw-300);
   line-height: 1.6;
+  text-align: justify;
 }
 
 
@@ -957,6 +958,106 @@ main {
   background: var(--text-gradient-yellow);
   height: 100%;
   border-radius: inherit;
+}
+
+
+
+
+
+.skills2-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.skills2-list .content-card {
+  padding-top: 25px !important;
+}
+
+.skills2-item {
+  position: relative;
+  background: var(--border-gradient-onyx);
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: var(--shadow-2);
+  z-index: 1;
+}
+
+.skills2-item::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: var(--bg-gradient-jet);
+  border-radius: inherit;
+  z-index: -1;
+}
+
+.skills2-item-title {
+  margin-bottom: 15px;
+  text-align: start;
+  width: 100%;
+}
+
+.skills2-content-box {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 19px;
+}
+
+.skill-card {
+  position: relative;
+  background: var(--bg-gradient-jet);
+  width: 80px;
+  height: 80px;
+  display: grid;
+  place-items: center;
+  border-radius: 15px;
+  box-shadow: var(--shadow-1);
+  cursor: help;
+  border: 1px solid var(--jet);
+  margin: 10px 0px;
+}
+
+.skill-card:hover .tooltip {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+@keyframes fadeIn {
+
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+
+}
+
+.tooltip {
+  position: absolute;
+  top: -40px;
+  background: var(--bg-gradient-jet);
+  min-width: max-content;
+  color: white;
+  font-size: 15px;
+  font-weight: var(--fw-700);
+  padding: 5px 10px;
+  border-radius: 10px;
+  box-shadow: var(--shadow-1);
+  transform: translateY(-10px);
+  opacity: 0;
+  pointer-events: none;
+  transition: var(--transition-1);
+  border: 1px solid var(--jet);
+  z-index: 1;
+}
+
+.card-icon img {
+  width: 48px;
+  border-radius: 5px;
 }
 
 
@@ -1875,7 +1976,15 @@ textarea.form-input::-webkit-resizer {
 }
 
 
+/**
+ * responsive lower than 768px screen
+ */
 
+@media (max-width: 768px) {
+  .skills2-content-box {
+    justify-content: space-between;
+  }
+}
 
 
 /**
