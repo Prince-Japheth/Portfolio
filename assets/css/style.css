@@ -897,6 +897,11 @@ main {
   margin-left: 10px;
   font-size: 0.7em;
   transition: transform 0.3s ease;
+  display: inline-block;
+}
+
+.timeline-item-title.active::after {
+  transform: rotate(180deg);
 }
 
 .timeline-item-title.edu::after {
@@ -904,10 +909,6 @@ main {
   margin-left: 10px;
   font-size: 0.7em;
   transition: transform 0.3s ease;
-}
-
-.timeline-item-title.active::after {
-  transform: rotate(180deg);
 }
 
 .timeline {
