@@ -58,7 +58,7 @@ overlay.addEventListener("click", testimonialsModalFunc);
 // custom select variables
 const select = document.querySelector("[data-select]");
 const selectItems = document.querySelectorAll("[data-select-item]");
-const selectValue = document.querySelector("[data-selecct-value]");
+const selectValue = document.querySelector("[data-select-value]");
 const filterBtn = document.querySelectorAll("[data-filter-btn]");
 
 select.addEventListener("click", function () { elementToggleFunc(this); });
@@ -207,14 +207,14 @@ document.addEventListener('DOMContentLoaded', () => {
     title.addEventListener('click', () => {
       const parentItem = title.closest('.timeline-item');
       const description = parentItem.querySelector('.timeline-description');
-      
+
       // Check if the clicked item is already active
       const isCurrentlyActive = title.classList.contains('active');
-      
+
       // Remove active state from all items
       timelineTitles.forEach(t => t.classList.remove('active'));
       timelineDescriptions.forEach(desc => desc.classList.remove('show'));
-      
+
       // If the clicked item wasn't already active, activate it
       if (!isCurrentlyActive) {
         title.classList.add('active');
