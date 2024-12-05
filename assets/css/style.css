@@ -2106,6 +2106,11 @@ textarea.form-input::-webkit-resizer {
   .navbar {
     background-color: transparent;
   }
+
+  .last-card {
+    margin-right: auto; 
+    margin-left: 34px;
+  }
 }
 
 
