@@ -909,13 +909,34 @@ main {
   max-height: 500px;
 }
 
-.timeline-company {
-  color: var(--light-gray);
-  font-weight: var(--fw-400);
-  line-height: 1.6;
-  margin-bottom: 10px;
-  display: flex;
-  align-items: center;
+.timeline-company,  .timeline-company-name {
+  color: var(--light-gray) !important;
+  font-weight: var(--fw-400) !important;
+  line-height: 1.6 !important;
+  margin-bottom: 10px !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+/* @media (max-width: 768px) {
+  .timeline-company-name {
+    max-width: 120px;
+    word-wrap: break-word;
+  }
+} */
+
+.link-icon {
+  width: 16px;
+  height: 16px;
+  margin-left: 5px;
+}
+
+.company-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+  border-radius: 50%;
+  object-fit: cover; /* Ensures the image inside the circle doesn't get distorted */
 }
 
 .job-type {
@@ -934,7 +955,10 @@ main {
   font-size: var(--fs-6);
   line-height: 1.3;
   margin-bottom: 7px;
+  cursor: pointer;
 }
+
+
 
 .timeline-item-title::after {
   content: '▼';
