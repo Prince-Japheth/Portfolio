@@ -5,7 +5,6 @@ window.addEventListener('load', function () {
 
   // Hide the preloader
   preloader.style.display = 'none';
-  console.log('hidden')
 
   // Initialize AOS after the preloader is hidden
   AOS.init();
