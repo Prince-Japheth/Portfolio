@@ -26,6 +26,57 @@
 
 <body>
   <main>
+
+    <div class="preloader-container" id="preloader">
+      <svg xmlns="http://www.w3.org/2000/svg" height="200" width="200">
+        <g style="order: -1;">
+          <polygon transform="rotate(45 100 100)" stroke-width="1" stroke="#ffbc5d" fill="none"
+            points="70,70 148,50 130,130 50,150" id="bounce"></polygon>
+          <polygon transform="rotate(45 100 100)" stroke-width="1" stroke="#d3a410" fill="none"
+            points="70,70 148,50 130,130 50,150" id="bounce2"></polygon>
+          <polygon transform="rotate(45 100 100)" stroke-width="2" stroke="" fill="#414750"
+            points="70,70 150,50 130,130 50,150"></polygon>
+          <polygon stroke-width="2" stroke="" fill="url(#gradiente)" points="100,70 150,100 100,130 50,100"></polygon>
+          <defs>
+            <linearGradient y2="100%" x2="10%" y1="0%" x1="0%" id="gradiente">
+              <stop style="stop-color: #1e2026;stop-opacity:1" offset="20%"></stop>
+              <stop style="stop-color:#414750;stop-opacity:1" offset="60%"></stop>
+            </linearGradient>
+          </defs>
+          <polygon transform="translate(20, 31)" stroke-width="2" stroke="" fill="#b7870f"
+            points="80,50 80,75 80,99 40,75"></polygon>
+          <polygon transform="translate(20, 31)" stroke-width="2" stroke="" fill="url(#gradiente2)"
+            points="40,-40 80,-40 80,99 40,75"></polygon>
+          <defs>
+            <linearGradient y2="100%" x2="0%" y1="-17%" x1="10%" id="gradiente2">
+              <stop style="stop-color: #d3a51000;stop-opacity:1" offset="20%"></stop>
+              <stop style="stop-color:#d3a51054;stop-opacity:1" offset="100%" id="animatedStop"></stop>
+            </linearGradient>
+          </defs>
+          <polygon transform="rotate(180 100 100) translate(20, 20)" stroke-width="2" stroke="" fill="#d3a410"
+            points="80,50 80,75 80,99 40,75"></polygon>
+          <polygon transform="rotate(0 100 100) translate(60, 20)" stroke-width="2" stroke="" fill="url(#gradiente3)"
+            points="40,-40 80,-40 80,85 40,110.2"></polygon>
+          <defs>
+            <linearGradient y2="100%" x2="10%" y1="0%" x1="0%" id="gradiente3">
+              <stop style="stop-color: #d3a51000;stop-opacity:1" offset="20%"></stop>
+              <stop style="stop-color:#d3a51054;stop-opacity:1" offset="100%" id="animatedStop"></stop>
+            </linearGradient>
+          </defs>
+          <polygon transform="rotate(45 100 100) translate(80, 95)" stroke-width="2" stroke="" fill="#ffe4a1"
+            points="5,0 5,5 0,5 0,0" id="particles"></polygon>
+          <polygon transform="rotate(45 100 100) translate(80, 55)" stroke-width="2" stroke="" fill="#ccb069"
+            points="6,0 6,6 0,6 0,0" id="particles"></polygon>
+          <polygon transform="rotate(45 100 100) translate(70, 80)" stroke-width="2" stroke="" fill="#fff"
+            points="2,0 2,2 0,2 0,0" id="particles"></polygon>
+          <polygon stroke-width="2" stroke="" fill="#292d34" points="29.5,99.8 100,142 100,172 29.5,130"></polygon>
+          <polygon transform="translate(50, 92)" stroke-width="2" stroke="" fill="#1e1e1f"
+            points="50,50 120.5,8 120.5,35 50,80"></polygon>
+        </g>
+      </svg>
+    </div>
+
+    <!-- data-aos-duration="1000" data-aos="fade-up" data-aos-delay="0"  -->
     <aside class="sidebar" data-sidebar>
       <div class="sidebar-info">
         <div class="avatar-container">
@@ -115,6 +166,8 @@
         </ul>
       </div>
     </aside>
+
+    <!--  data-aos-duration="1000" data-aos="fade-up" data-aos-delay="200" -->
     <div class="main-content">
       <nav class="navbar">
         <ul class="navbar-list">
@@ -164,9 +217,10 @@
               <div class="service-content-box">
                 <h4 class="h4 service-item-title">Full-Stack Web Development</h4>
                 <p class="service-item-text">
-                  I specialize in building powerful, full-featured web applications that deliver flawless functionality
-                  and smooth, intuitive experiences. From front-end design to back-end architecture, I ensure every
-                  detail is crafted with precision and care.
+                  I design and build robust web applications using modern technologies like React, Laravel, PHP and
+                  MySQL. From intuitive front-end interfaces to scalable back-end architecture, I focus on delivering
+                  solutions that are fast, secure, and optimized for performance. My projects consistently improve user
+                  engagement and streamline business workflows.
                 </p>
               </div>
             </li>
@@ -177,9 +231,10 @@
               <div class="service-content-box">
                 <h4 class="h4 service-item-title">Cross-Platform Mobile App Development</h4>
                 <p class="service-item-text">
-                  I bring ideas to life through high-performance, cross-platform mobile applications that feel native on
-                  both iOS and Android. With a single codebase, I create seamless, consistent experiences across all
-                  devices—focusing on quality, reliability, and user satisfaction.
+                  Using tools like React Native and Flutter, I develop high-performance mobile apps that run seamlessly
+                  on both iOS and Android. By leveraging a single codebase, I ensure faster development cycles and
+                  consistent experiences across platforms. My apps have enhanced user satisfaction and reduced
+                  operational costs for clients.
                 </p>
               </div>
             </li>
@@ -190,9 +245,10 @@
               <div class="service-content-box">
                 <h4 class="h4 service-item-title">UI/UX Design</h4>
                 <p class="service-item-text">
-                  I craft intuitive, user-centered designs that not only look stunning but also function effortlessly.
-                  Every interface I design is built to enhance the user experience, combining aesthetic appeal with
-                  seamless usability to keep users engaged and satisfied.
+                  I specialize in creating designs that prioritize user needs while aligning with business goals. Using
+                  tools like Figma and Adobe XD, I craft interfaces that are both visually stunning and highly
+                  functional. My design process is driven by user research, wireframing, and prototyping, ensuring every
+                  project delivers measurable results, such as improved user retention rates.
                 </p>
               </div>
             </li>
@@ -203,13 +259,35 @@
               <div class="service-content-box">
                 <h4 class="h4 service-item-title">Graphic Design</h4>
                 <p class="service-item-text">
-                  I create visually captivating designs that tell your brand’s story. Whether it’s a bold logo, an
-                  eye-catching flyer, or any other graphic element, I bring creativity, style, and attention to detail
-                  to make your brand unforgettable.
+                  From logo creation to marketing materials, I provide graphic design services that tell your brand’s
+                  story. My expertise in tools like Adobe Photoshop, Illustrator, CorelDRAW, and Canva allows me to
+                  produce impactful visuals tailored to your audience. Past projects include branding packages, social
+                  media assets, and event collateral that drove client visibility and engagement.
                 </p>
               </div>
             </li>
           </ul>
+
+          <br><br>
+          <h3 class="h3 service-title">Why Work With Me?</h3>
+          <ul class="service-list">
+            <li class="service-item">
+              <div class="service-content-box">
+                <p class="service-item-text" style="text-align: center;">
+                  Skilled in modern technologies and tools to deliver cutting-edge solutions.
+                </p>
+              </div>
+            </li>
+            <li class="service-item">
+              <div class="service-content-box">
+                <p class="service-item-text" style="text-align: center;">
+                  Committed to deadlines, clear communication, and exceeding client expectations.
+                </p>
+              </div>
+            </li>
+          </ul>
+
+          <br><br>
         </section>
         <!--
                         - testimonials
@@ -225,10 +303,7 @@
                 <h4 class="h4 testimonials-item-title" data-testimonials-title>King Jethro</h4>
                 <div class="testimonials-text" data-testimonials-text>
                   <p>
-                    Working with Japheth was a pleasure. His ability to translate my ideas into a stunning UI/UX design
-                    is
-                    impressive. His communication, flexibility, and creativity made my projects a success. I couldn't be
-                    happier with the result..
+                    Working with Japheth was a great experience. He really took the time to understand my vision and turned it into something beautiful. His communication was clear, and he made sure I was happy with every part of the design. The final result was way beyond what I expected.
                   </p>
                   <br>
                   <time><b>Software Engineer</b></time>
@@ -243,8 +318,7 @@
                 <h4 class="h4 testimonials-item-title" data-testimonials-title="">Adamu Manu</h4>
                 <div class="testimonials-text" data-testimonials-text="">
                   <p>
-                    Working with Japheth was an absolute pleasure. His attention to detail and his level of creativity
-                    is quite impressive.
+                    Japheth was fantastic to work with. His attention to detail and creativity really stood out. He helped me build a system that’s smooth and easy to use. I’m definitely going to work with him again on future projects.
                   </p>
                   <br>
                   <time><b>Full Stack Developer</b></time>
@@ -260,8 +334,7 @@
                 <h4 class="h4 testimonials-item-title" data-testimonials-title="">Omoleye Marvelous</h4>
                 <div class="testimonials-text" data-testimonials-text="">
                   <p>
-                    Japheth's expertise in web design, development, UI/UX design, and graphic design has significantly
-                    contributed to the success of our team's endeavors.
+                    Japheth is incredibly talented. He really knows his stuff when it comes to UI/UX and web design. Thanks to him, our website looks amazing and works even better. He’s definitely someone I trust to bring great ideas to life.
                   </p>
                   <br>
                   <time><b>Web Developer, UI/UX Design</b></time>
@@ -276,8 +349,7 @@
                 <h4 class="h4 testimonials-item-title" data-testimonials-title="">Edikan Emmanuel</h4>
                 <div class="testimonials-text" data-testimonials-text="">
                   <p>
-                    Japheth’s collaborative spirit truly made our projects shine. Working alongside him was a seamless
-                    experience, where his expertise and team-oriented approach brought our collective vision to life.
+                    I really enjoyed collaborating with Japheth. He’s super easy to work with and brings great ideas to the table. The project we worked on together turned out great, and I’d love to team up with him again. He really helped make the project a success.
                   </p>
                   <br>
                   <time><b>Web Developer</b></time>
@@ -293,8 +365,7 @@
                 <h4 class="h4 testimonials-item-title" data-testimonials-title="">Ayomide Faithful Olaoye</h4>
                 <div class="testimonials-text" data-testimonials-text="">
                   <p>
-                    Japheth's expertise in web design, development, and graphic design is unmatched. He consistently
-                    delivers top-notch work with precision and creativity.
+                    Japheth’s design work is spot on. I needed some visuals for a project, and he gave me exactly what I had in mind—plus some amazing tweaks I didn’t think of. He’s quick, creative, and always professional. I’m looking forward to working with him again.
                   </p>
                   <br>
                   <time><b>Graphic Designer, Front-end Web Developer</b></time>
@@ -384,24 +455,27 @@
               <a href="https://aquilacyber.netlify.app/" target="_blank" class="timeline-company">
                 <img src="./assets/images/aquila.png" alt="Company Website" class="company-icon">
                 Aquila Cyber
-                <img src="https://cdn-icons-png.flaticon.com/128/1017/1017466.png" alt="Company Website" class="link-icon">
+                <img src="https://cdn-icons-png.flaticon.com/128/1017/1017466.png" alt="Company Website"
+                  class="link-icon">
                 <span class="job-type">Part-time</span>
               </a>
               <span>2024 — Present</span>
               <p class="timeline-description">
                 Developed and maintained full-stack web applications using the MERN and XAMP stacks.
                 <br>
-                Built responsive and scalable user interfaces with React.js and ensured seamless user experiences across platforms.
+                Built responsive and scalable user interfaces with React.js and ensured seamless user experiences across
+                platforms.
                 <br>
                 Designed and optimized server-side functionality using Node.js and PHP.
                 <br>
                 Integrated and managed databases using MongoDB and MySQL to handle dynamic and data-driven features.
                 <br>
-                Conducted end-to-end testing and debugging to ensure performance, reliability, and security of applications.
+                Conducted end-to-end testing and debugging to ensure performance, reliability, and security of
+                applications.
                 <br>
                 Collaborated with cross-functional teams to deliver high-quality solutions for diverse client needs.
               </p>
-            </li>            
+            </li>
             <li class="timeline-item">
               <h4 class="h4 timeline-item-title">Website Developer</h4>
               <a href="https://chinwubajeffrey.github.io/safekan/" target="_blank" class="timeline-company">
@@ -427,8 +501,9 @@
             <li class="timeline-item">
               <h4 class="h4 timeline-item-title">UI/UX and Graphic Designer</h4>
               <a href="https://weblaunchguys.online/" target="_blank" class="timeline-company">
-                <img src="https://weblaunchguys.online/wp-content/uploads/2024/05/cropped-Pn-Logo-alone-color-32x32.png" alt="Company Website" class="company-icon">
-               <!-- <span class="timeline-company-name"> Web Launch Guys </span> -->
+                <img src="https://weblaunchguys.online/wp-content/uploads/2024/05/cropped-Pn-Logo-alone-color-32x32.png"
+                  alt="Company Website" class="company-icon">
+                <!-- <span class="timeline-company-name"> Web Launch Guys </span> -->
                 Web Launch Guys
                 <img src="https://cdn-icons-png.flaticon.com/128/1017/1017466.png" alt="Company Website"
                   class="link-icon">
@@ -462,7 +537,7 @@
             <li class="content-card">
               <h4 class="h4 skills2-item-title">Some Technologies i love to build with</h4>
               <div class="skills2-content-box">
-                <div class="skill-card" data-aos="fade-up" data-aos-delay="0">
+                <div class="skill-card" c>
                   <div class="card-icon">
                     <img src="https://cdn-icons-png.flaticon.com/128/3291/3291670.png" alt="HTML5 logo">
                   </div>

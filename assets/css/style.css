@@ -198,7 +198,30 @@ article {
   color: var(--orange-yellow-crayola);
   box-shadow: var(--shadow-1);
   z-index: 1;
+  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out; /* Smooth transition for hover */
 }
+
+.icon-box:hover {
+  transform: translateY(-5px) rotate(-5deg) scale(1.1); /* Move slightly upwards, rotate, and magnify */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow for the 3D effect */
+  transition: transform 0.2s ease-in, box-shadow 0.2s ease-in; /* Slower transition for returning to default */
+}
+
+.social-item .social-link {
+  color: var(--light-gray-70);
+  font-size: 18px;
+  transition: transform 0.3s ease-out, color 0.3s ease-out; /* Smooth transition for hover */
+}
+
+.social-item .social-link:hover {
+  color: var(--light-gray);
+  transform: translateY(-5px) rotate(-5deg) scale(1.1); /* Move slightly upwards, rotate, and magnify */
+  transition: transform 0.2s ease-in, color 0.2s ease-in; /* Slower transition for returning to default */
+}
+
+
+
+
 
 .icon-box::before {
   content: "";
@@ -313,6 +336,86 @@ article.active {
   border-radius: inherit;
   z-index: -1;
 }
+
+
+
+
+
+/*-----------------------------------*\
+  #PRELOADER
+\*-----------------------------------*/
+
+/* From Uiverse.io by Juanes200122 */ 
+.preloader-container {
+  flex: 1;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed; /* This makes sure it stays in place */
+  width: 100%; /* Ensure it covers the whole viewport */
+  top: 0;
+  left: 0;
+  background: var(--smoky-black);
+  z-index: 9999; /* High value to make sure it appears above everything */
+}
+
+
+@keyframes bounce {
+  0%,
+  100% {
+    translate: 0px 36px;
+  }
+  50% {
+    translate: 0px 46px;
+  }
+}
+@keyframes bounce2 {
+  0%,
+  100% {
+    translate: 0px 46px;
+  }
+  50% {
+    translate: 0px 56px;
+  }
+}
+
+@keyframes umbral {
+  0% {
+    stop-color: #d3a5102e;
+  }
+  50% {
+    stop-color: rgba(211, 165, 16, 0.519);
+  }
+  100% {
+    stop-color: #d3a5102e;
+  }
+}
+@keyframes partciles {
+  0%,
+  100% {
+    translate: 0px 16px;
+  }
+  50% {
+    translate: 0px 6px;
+  }
+}
+#particles {
+  animation: partciles 4s ease-in-out infinite;
+}
+#animatedStop {
+  animation: umbral 4s infinite;
+}
+#bounce {
+  animation: bounce 4s ease-in-out infinite;
+  translate: 0px 36px;
+}
+#bounce2 {
+  animation: bounce2 4s ease-in-out infinite;
+  translate: 0px 46px;
+  animation-delay: 0.5s;
+}
+
 
 
 
@@ -514,16 +617,6 @@ main {
   padding-left: 7px;
 }
 
-.social-item .social-link {
-  color: var(--light-gray-70);
-  font-size: 18px;
-}
-
-
-.social-item .social-link:hover {
-  color: var(--light-gray);
-}
-
 
 
 
@@ -651,6 +744,7 @@ main {
   font-size: var(--fs-6);
   font-weight: var(--fw-3);
   line-height: 1.6;
+  text-align: justify;
 }
 
 

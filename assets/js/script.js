@@ -1,6 +1,16 @@
 'use strict';
 
-AOS.init();
+window.addEventListener('load', function() {
+  const preloader = document.getElementById('preloader');
+  
+  // Hide the preloader
+  preloader.style.display = 'none';
+  
+  // Initialize AOS after the preloader is hidden
+  AOS.init();
+});
+
+
 
 // element toggle function
 const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
