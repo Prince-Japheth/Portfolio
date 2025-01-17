@@ -385,6 +385,13 @@ article.active {
   z-index: 9999;
 }
 
+@media (max-width: 768px) { /* Adjust the max-width as needed for your breakpoint */
+  #toast {
+    width: calc(100% - 30px); /* Full screen width with 15px horizontal margin */
+  }
+}
+
+
 @keyframes fadeInDown {
   from {
     top: -5%;
