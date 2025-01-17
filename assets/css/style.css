@@ -198,25 +198,32 @@ article {
   color: var(--orange-yellow-crayola);
   box-shadow: var(--shadow-1);
   z-index: 1;
-  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out; /* Smooth transition for hover */
+  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+  /* Smooth transition for hover */
 }
 
 .icon-box:hover {
-  transform: translateY(-5px) rotate(-5deg) scale(1.1); /* Move slightly upwards, rotate, and magnify */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow for the 3D effect */
-  transition: transform 0.2s ease-in, box-shadow 0.2s ease-in; /* Slower transition for returning to default */
+  transform: translateY(-5px) rotate(-5deg) scale(1.1);
+  /* Move slightly upwards, rotate, and magnify */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  /* Enhanced shadow for the 3D effect */
+  transition: transform 0.2s ease-in, box-shadow 0.2s ease-in;
+  /* Slower transition for returning to default */
 }
 
 .social-item .social-link {
   color: var(--light-gray-70);
   font-size: 18px;
-  transition: transform 0.3s ease-out, color 0.3s ease-out; /* Smooth transition for hover */
+  transition: transform 0.3s ease-out, color 0.3s ease-out;
+  /* Smooth transition for hover */
 }
 
 .social-item .social-link:hover {
   color: var(--light-gray);
-  transform: translateY(-5px) rotate(-5deg) scale(1.1); /* Move slightly upwards, rotate, and magnify */
-  transition: transform 0.2s ease-in, color 0.2s ease-in; /* Slower transition for returning to default */
+  transform: translateY(-5px) rotate(-5deg) scale(1.1);
+  /* Move slightly upwards, rotate, and magnify */
+  transition: transform 0.2s ease-in, color 0.2s ease-in;
+  /* Slower transition for returning to default */
 }
 
 
@@ -345,36 +352,127 @@ article.active {
   #PRELOADER
 \*-----------------------------------*/
 
-/* From Uiverse.io by Juanes200122 */ 
+#toast {
+  visibility: hidden;
+  max-width: 1000px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  background: var(--eerie-black-2);
+  border: 1px solid var(--jet);
+  box-shadow: var(--shadow-2);
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  padding: 13px;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 5%;
+  font-size: 15px;
+  font-weight: 400;
+  margin-top: 10px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#toast.show {
+  visibility: visible;
+  -webkit-animation: fadeInDown 0.6s cubic-bezier(0.4, 0, 0.2, 1),
+    shake 0.8s cubic-bezier(0.36, 0, 0.66, -0.56) 0.2s,
+    fadeOut 1.5s cubic-bezier(0.4, 0, 0.2, 1) 3s;
+  animation: fadeInDown 0.6s cubic-bezier(0.4, 0, 0.2, 1),
+    shake 0.8s cubic-bezier(0.36, 0, 0.66, -0.56) 0.2s,
+    fadeOut 1.5s cubic-bezier(0.4, 0, 0.2, 1) 3s;
+  z-index: 9999;
+}
+
+@keyframes fadeInDown {
+  from {
+    top: -5%;
+    opacity: 0;
+    transform: translateX(-50%) translateY(-10px);
+  }
+
+  to {
+    top: 5%;
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translateX(-50%) translateY(-1px);
+  }
+
+  20%, 80% {
+    transform: translateX(-50%) translateY(2px);
+  }
+
+  30%, 50%, 70% {
+    transform: translateX(-50%) translateY(-2px);
+  }
+
+  40%, 60% {
+    transform: translateX(-50%) translateY(2px);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    top: 5%;
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+
+  to {
+    top: -5%;
+    opacity: 0;
+    transform: translateX(-50%) translateY(-10px);
+  }
+}
+
+
+
+
+
+/* From Uiverse.io by Juanes200122 */
 .preloader-container {
   flex: 1;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: fixed; /* This makes sure it stays in place */
-  width: 100%; /* Ensure it covers the whole viewport */
+  position: fixed;
+  /* This makes sure it stays in place */
+  width: 100%;
+  /* Ensure it covers the whole viewport */
   top: 0;
   left: 0;
   background: var(--smoky-black);
-  z-index: 9999; /* High value to make sure it appears above everything */
+  z-index: 9998;
+  /* High value to make sure it appears above everything */
 }
 
 
 @keyframes bounce {
+
   0%,
   100% {
     translate: 0px 36px;
   }
+
   50% {
     translate: 0px 46px;
   }
 }
+
 @keyframes bounce2 {
+
   0%,
   100% {
     translate: 0px 46px;
   }
+
   50% {
     translate: 0px 56px;
   }
@@ -384,32 +482,41 @@ article.active {
   0% {
     stop-color: #d3a5102e;
   }
+
   50% {
     stop-color: rgba(211, 165, 16, 0.519);
   }
+
   100% {
     stop-color: #d3a5102e;
   }
 }
+
 @keyframes partciles {
+
   0%,
   100% {
     translate: 0px 16px;
   }
+
   50% {
     translate: 0px 6px;
   }
 }
+
 #particles {
   animation: partciles 4s ease-in-out infinite;
 }
+
 #animatedStop {
   animation: umbral 4s infinite;
 }
+
 #bounce {
   animation: bounce 4s ease-in-out infinite;
   translate: 0px 36px;
 }
+
 #bounce2 {
   animation: bounce2 4s ease-in-out infinite;
   translate: 0px 46px;
@@ -1003,7 +1110,8 @@ main {
   max-height: 500px;
 }
 
-.timeline-company,  .timeline-company-name {
+.timeline-company,
+.timeline-company-name {
   color: var(--light-gray) !important;
   font-weight: var(--fw-400) !important;
   line-height: 1.6 !important;
@@ -1030,7 +1138,8 @@ main {
   height: 16px;
   margin-right: 5px;
   border-radius: 50%;
-  object-fit: cover; /* Ensures the image inside the circle doesn't get distorted */
+  object-fit: cover;
+  /* Ensures the image inside the circle doesn't get distorted */
 }
 
 .job-type {
@@ -2226,7 +2335,7 @@ textarea.form-input::-webkit-resizer {
   }
 
   .last-card {
-    margin-right: auto; 
+    margin-right: auto;
     margin-left: 12px;
   }
 }

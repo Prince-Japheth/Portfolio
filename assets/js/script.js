@@ -1,14 +1,47 @@
 'use strict';
 
-window.addEventListener('load', function() {
+window.addEventListener('load', function () {
   const preloader = document.getElementById('preloader');
-  
+
   // Hide the preloader
   preloader.style.display = 'none';
-  
+  console.log('hidden')
+
   // Initialize AOS after the preloader is hidden
   AOS.init();
 });
+
+
+const toast = document.createElement('div');
+toast.id = 'toast';
+toast.textContent = 'Loading... Check your internet connection if this takes too long.';
+document.body.appendChild(toast);
+
+// Show toast after 2s if page isn't loaded
+const loadingTimeout = setTimeout(() => {
+    if (document.readyState !== 'complete') {
+        toast.classList.add('show');
+    }
+}, 2000);
+
+// Remove toast on page load
+window.addEventListener('load', () => {
+    clearTimeout(loadingTimeout);
+    if (toast.classList.contains('show')) {
+        toast.classList.remove('show');
+    }
+});
+
+
+// Add event listener for animation end
+toast.addEventListener('animationend', (e) => {
+    if (e.animationName === 'fadeOut') {
+        toast.classList.remove('show');
+    }
+});
+
+
+
 
 
 
