@@ -10,7 +10,8 @@ window.addEventListener('load', function () {
   AOS.init();
 });
 
-
+// Commenting out the toast functionality
+/*
 const toast = document.createElement('div');
 toast.id = 'toast';
 toast.textContent = 'Loading... Check your internet connection if this takes too long.';
@@ -31,13 +32,31 @@ window.addEventListener('load', () => {
     }
 });
 
-
 // Add event listener for animation end
 toast.addEventListener('animationend', (e) => {
     if (e.animationName === 'fadeOut') {
         toast.classList.remove('show');
     }
 });
+*/
+
+// Hide preloader if page is not fully loaded after 2 seconds
+const preloaderTimeout = setTimeout(() => {
+  if (document.readyState !== 'complete') {
+    const preloader = document.getElementById('preloader');
+    preloader.style.display = 'none';
+    AOS.init();
+  }
+}, 2000);
+
+// Immediately hide preloader if page is fully loaded before 2 seconds
+window.addEventListener('load', () => {
+  clearTimeout(preloaderTimeout);
+  const preloader = document.getElementById('preloader');
+  preloader.style.display = 'none';
+  AOS.init();
+});
+
 
 
 
